@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 430px;
+      margin-bottom: 40px;
+    }
+
+    .div-heroi,
+    .div-xp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .btn {
+      padding: 5px;
+      width: 100px;
+      align-self: center;
+    }
+    .btn:hover{
+      cursor: pointer;
+    }
+
+    input {
+      padding: 10px 5px;
+    }
+  </style>
+
+  <title>Desafio Herói</title>
+</head>
+
+<body>
+  <h1>Classificador de Nível de Herói</h1>
+  <div class="container">
+    <div class="div-heroi">
+      <label for="heroi">Nome do seu Herói:</label>
+      <input type="text" id="heroi">
+    </div>
+
+    <div class="div-xp">
+      <label for="xp">Informe o Nível de XP do se Herói:</label>
+      <input type="number" id="xp">
+    </div>
+
+    <button class="btn">Verificar</button>
+  </div>
+
+  <div class="resultado">
+    <h2 class="elo"></h2>
+    <p class="descricao" "></p>
+  </div>
+  <div class="imagem">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
